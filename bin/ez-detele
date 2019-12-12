@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const chalk = require('chalk');//改变字体颜色
+const ora = require('ora') //终端 动画库
+const inquirer = require("inquirer");
+const  download = require("download-git-repo");//下载
+const  fs = require("fs");
+const tem  = require(`${__dirname}/../template`)
+
+
+let  question=[{
+    name:"name",
+    message: "请输入要删除的模板名称",
+    vilidate:function(val){
+        if (val === '') {
+            return 'Name is required!'
+        } else if (!tem[val]) {
+            return 'Template does not exist!'
+        } else  {
+            return true
+        }
+
+    }
+}];
+inquirer.prompt(question).then((answers)=>{
+    let { name } = answers;
+    delete tem[name]
+    fs.writeFile(`${__dirname}/../template.json`, JSON.stringify(tem), 'utf-8', err => {
+        if (err) console.log(err)
+        console.log('\n')
+        console.log(chalk.green('Deleted successfully!\n'))
+        console.log(chalk.grey('The latest template list is: \n'))
+        console.log(tem)
+        console.log('\n')
+    })
+
+})
