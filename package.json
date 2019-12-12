@@ -1,14 +1,14 @@
 {
-  "name": "ez-cli",
+  "name": "ezd-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
-    "ez": "bin/ez",
-    "ez-add": "bin/ez-add",
-    "ez-init": "bin/ez-init",
-    "ez-detele": "bin/ez-detele",
-    "ez-list": "bin/ez-list"
+    "ezd": "bin/ez",
+    "ezd-add": "bin/ez-add",
+    "ezd-init": "bin/ez-init",
+    "ezd-detele": "bin/ez-detele",
+    "ezd-list": "bin/ez-list"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
