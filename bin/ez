@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const commander= require('commander');
+commander.name("ez")
+    .usage("[ global options] command")
+    .version('1.0.0')
+    .command("add","add a new template")
+    .command("detele","detele a new template")
+    .command("list","list all the templates")
+    .command("init","generate a new project from a template")
+commander.parse(process.argv);
+
+
+
+

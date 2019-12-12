@@ -1,0 +1,32 @@
+{
+  "name": "ez-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "ez": "bin/ez",
+    "ez-add": "bin/ez-add",
+    "ez-init": "bin/ez-init"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sammaz/ez-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sammaz/ez-cli/issues"
+  },
+  "homepage": "https://github.com/Sammaz/ez-cli#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.0",
+    "ora": "^4.0.3"
+  },
+  "devDependencies": {}
+}
