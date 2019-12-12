@@ -6,7 +6,9 @@
   "bin": {
     "ez": "bin/ez",
     "ez-add": "bin/ez-add",
-    "ez-init": "bin/ez-init"
+    "ez-init": "bin/ez-init",
+    "ez-detele": "bin/ez-detele",
+    "ez-list": "bin/ez-list"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
